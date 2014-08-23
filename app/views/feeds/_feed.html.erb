@@ -1,0 +1,4 @@
+<%=link_to ob.title ,feed_path(ob) %> | <%= ob.link %><br/>
+<%=link_to "Detail" ,feed_path(ob),:class=>'btn btn-info' %>
+<%=link_to "Edit" ,edit_feed_path(ob),:class=>'btn btn-primary',remote: true %> 
+<%=link_to "Delete" ,feed_path(ob),:method=>'delete' ,:class=>'btn btn-warning'%>

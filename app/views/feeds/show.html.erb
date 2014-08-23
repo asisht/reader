@@ -1,0 +1,8 @@
+<div class='breadcrumb'>
+<h3><%=@rss.feed.title %><h3/>
+</div>
+<% @rss.entries.each do |f|%>
+<div class='breadcrumb'>
+	<%=link_to f.title,f.link , :target => "_blank" %><br/>
+</div>
+<% end %>

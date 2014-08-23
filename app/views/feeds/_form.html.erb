@@ -1,0 +1,9 @@
+<%=form_for @feed,html: {:class=>"form-inline"} , remote: true do |f| %>
+<div class="form-group">
+	<%=f.url_field :link , :class=>"form-control" , 'placeholder'=>'Enter RSS Feed URL' %>
+	<%= f.submit option ,:class=>'btn btn-primary'  %>
+	<%if option == "Update" %>
+	<%=link_to "Cancel",cancel_feeds_path(:id=>@feed.id), {:class=> 'btn btn-warning', remote: true } %>
+	<%end%>
+</div>
+<%end%>

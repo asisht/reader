@@ -1,0 +1,3 @@
+alert("ok");
+//var row = $()
+$('#<%="row_#{@feed.id}"%>').html('<%= j render(:partial => "form", locals: { option: "Update"} )%>');

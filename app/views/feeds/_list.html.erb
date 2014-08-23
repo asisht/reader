@@ -1,0 +1,9 @@
+<table class="table">
+<% @feeds.each do |f|%>
+<tr>
+	<td id=<%="row_#{f.id}"%>>
+		<%=render partial: "feed", locals:{ ob: f} %>
+	</td>
+</tr>
+<% end %>
+</table>
