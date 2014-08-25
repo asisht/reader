@@ -15,22 +15,3 @@
 //= require bootstrap
 //= require turbolinks
 //= require_tree .
-$(document).ready(function(){
-
-	
-		// $(".my-form").submit(function(){
-		// 	alert("Submitting form");
-		// });
-	$( "form" ).submit(function( event ) {
-		var field = $( "input:first" ).val();
-		alert(field);
-		// if ( $( "input:first" ).val() === "correct" ) {
-		// 	$( "span" ).text( "Validated..." ).show();
-		// 	return;
-		// }
-		// $( "span" ).text( "Not valid!" ).show().fadeOut( 1000 );
-		event.preventDefault();
-	});
-
-	
-});
